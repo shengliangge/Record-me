@@ -4,39 +4,39 @@ function Stack() {
     this.item = [];
     //栈的操作
     // 1.将元素压入栈
-    Stack.prototype.push = function(element) {
-            this.item.push(element)
+    Stack.prototype.push = function (element) {
+        this.item.push(element)
+    }
+    // 2.从栈中取出元素
+    Stack.prototype.pop = function () {
+        if (this.isEmpty()) { // 先判断栈是否为空
+            console.log('栈为空');
+            return null;
         }
-        // 2.从栈中取出元素
-    Stack.prototype.pop = function() {
-            if (this.isEmpty()) { // 先判断栈是否为空
-                console.log('栈为空');
-                return null;
-            }
-            return this.item.pop();
+        return this.item.pop();
+    }
+    // 3.查看栈顶元素
+    Stack.prototype.peek = function () {
+        if (this.isEmpty()) { // 先判断栈是否为空
+            console.log('栈为空');
+            return null;
         }
-        // 3.查看栈顶元素
-    Stack.prototype.peek = function() {
-            if (this.isEmpty()) { // 先判断栈是否为空
-                console.log('栈为空');
-                return null;
-            }
-            return this.item[this.item.length - 1]
+        return this.item[this.item.length - 1]
+    }
+    // 4.判断栈是否为空
+    Stack.prototype.isEmpty = function () {
+        if (this.item.length <= 0) {
+            return true;
         }
-        // 4.判断栈是否为空
-    Stack.prototype.isEmpty = function() {
-            if (this.item.length <= 0) {
-                return true;
-            }
-            return false;
-        }
-        // 5. 获取栈中元素的个数
-    Stack.prototype.size = function() {
+        return false;
+    }
+    // 5. 获取栈中元素的个数
+    Stack.prototype.size = function () {
         return this.item.length;
     }
 
     // 6.toString方法
-    Stack.prototype.toString = function() {
+    Stack.prototype.toString = function () {
         var resultString = '';
         for (var i of this.item) {
             resultString += i;
