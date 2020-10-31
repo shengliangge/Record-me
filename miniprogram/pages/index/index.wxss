@@ -1,0 +1,98 @@
+/* miniprogram/pages/index/index.wxss */
+@import '../../assets/fonts/iconfont.wxss';
+.block{
+  position: fixed;
+  top: 0;
+  font-size: 30rpx;
+  width: 100%;
+  color: #fff;
+  padding: 70rpx 0rpx 0 40rpx;
+  letter-spacing: 4rpx;
+}
+.bg-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.content-wrapper{
+  z-index: 999;
+}
+.bg-image image{
+  width: 100%;
+}
+.header{
+  padding: 40rpx 40rpx 0 40rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -30rpx;
+
+}
+.header image{
+  width: 200rpx;  
+  z-index: -1;
+}
+.banner{
+  margin: 0 90rpx;
+  height: 160rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx rgb(54, 46, 48);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.banner .slogan-wrapper{
+  height: 100rpx;
+  width: 90%;
+  text-align: center;
+  line-height: 100rpx;
+  font-weight: 700;
+}
+.button-wrapper{
+  padding: 0 90rpx;
+  display: flex;
+  justify-content: space-between;
+}
+/* .button-pad{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8F9;
+} */
+.button-content .line{  
+  margin: -100rpx auto 0;
+  width: 2rpx;
+  height: 700rpx;
+  background-color: #F6F8F9;
+}
+.button{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #F6F8F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20rpx #999;
+}
+.button image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.icon{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+
+}
+.icon image{
+  width: 200rpx;
+}

@@ -1,0 +1,23 @@
+<!--miniprogram/pages/personal/personal.wxml-->
+<tab-bar title="{{pageTitle}}"></tab-bar>
+<view class="personal-container">
+	<view class="user-info">
+		<view class="user-image">
+			<image src="{{userInfo.avatarUrl}}" mode="widthFix" />
+		</view>
+	</view>
+
+	<view class="banner-news">{{userInfo.nickName}}</view>
+	<!-- 组件 -->
+	<block wx:for="{{sectionInfo}}" wx:key="item">
+		<personalSection
+		 iconUrl="{{item.iconUrl}}"
+     title="{{item.title}}"
+     data-url="{{item.url}}"
+		 bindtap="gotoSuggestion"
+		></personalSection>
+	</block>
+
+</view>
+<footer-bar/>
+

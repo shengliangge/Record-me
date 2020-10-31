@@ -1,0 +1,42 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #F5FAFE;
+}
+.van-share-sheet__options {
+  padding: 16px 0 35px 8px !important;
+}
+.color-envelope{
+  width: 100%;
+}
+.color-envelope image{
+  width: 100%;
+}
+.title-wrapper{
+  width: 100%;
+  height: 100rpx;
+  margin-top: -40rpx;
+  text-align: center;
+}
+.content-top__tips {
+  color: #000;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 30rpx;
+  padding: 10rpx 40rpx;
+  font-family: LiShu;
+  letter-spacing: 4rpx;
+  box-shadow: 0 4rpx 3rpx gray;
+}
+.record-wrapper{
+  margin: 40rpx 20rpx 0;
+}
+.block-space{
+  height: 180rpx;
+  background: #F5FAFE;
+}
+.share-sheet{
+  position: relative;
+  z-index: 100 !important;
+}

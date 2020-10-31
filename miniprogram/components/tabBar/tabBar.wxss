@@ -1,0 +1,20 @@
+/* components/tabBar/tabBar.wxss */
+.container{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.content{
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3rpx;
+  color: #fff;
+  font-size: 30rpx !important;
+}
+.content-img{
+  width: 35rpx;
+  height: 35rpx;
+  margin:0 10rpx 0 10rpx;
+}

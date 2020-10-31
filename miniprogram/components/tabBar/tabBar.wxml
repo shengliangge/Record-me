@@ -1,0 +1,20 @@
+<!--components/tabBar/tabBar.wxml-->
+<view>
+	<!-- 占位块，顶替脱离文档流的顶部导航栏 -->
+	<view style="height:{{topHeight}}px">
+	</view>
+	<view class="container" style="background:{{backgroundColor}}">
+		<!-- 最顶部的电量栏 -->
+		<view style="height:{{statusBarHeight}}px"></view>
+		<!-- 电量栏下面的内容栏 -->
+		<view class="content" style="{{navBarStyle}}">
+			<image
+			 class="content-img"
+			 bindtap="goBack"
+			 src="../../images/leftBtn.png"
+			/>
+			{{title}}
+		</view>
+	</view>
+</view>
+

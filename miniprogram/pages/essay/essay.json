@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-toast": "@vant/weapp/toast/index",
+    "load":"../../components/load/load",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-dialog": "@vant/weapp/dialog/index"
+  }
+}

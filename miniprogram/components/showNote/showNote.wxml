@@ -1,0 +1,52 @@
+<van-swipe-cell
+ id="swipe-cell2"
+ right-width="{{ 50 }}"
+ name="showNote"
+>
+	<van-cell-group>
+		<view class="container">
+			<view class="item-time">
+				<text>{{month}}月</text>
+				<text class="day">{{day}}</text>
+			</view>
+
+			<view class="item-content">
+				<view class="item-content__text">{{content}}</view>
+				<view class="item-content__pic">
+					<block wx:for="{{imgs}}" wx:key="index">
+						<image
+						 bindtap="topic_preview"
+						 data-url='{{item}}'
+						 class="item-content__pic-image"
+						 src="{{item}}"
+						 mode="aspectFill"
+						/>
+					</block>
+				</view>
+				<view class="adress">
+					<image
+					 class="adress-image"
+					 src="../../images/adress.png"
+					 mode="widthFix"
+					/>
+				</view>
+			</view>
+
+			<view class="sign">
+				<image
+				 class="sign-image"
+				 src="../../images/round.png"
+				 mode="widthFix"
+				/>
+				<text></text>
+			</view>
+		</view>
+	</van-cell-group>
+	<view
+	 slot="right"
+	 class="van-swipe-cell__right"
+	 bindtap="onClick"
+	>删除
+	</view>
+</van-swipe-cell>
+

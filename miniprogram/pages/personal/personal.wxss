@@ -1,0 +1,32 @@
+/* miniprogram/pages/personal/personal.wxss */
+.personal-container{
+  height: 100vh;
+  background-color: #F5FAFE;
+}
+.user-info{
+  height: 200rpx;
+  background-color:#4792E6;
+  padding-top: 40rpx;
+}
+.user-image{
+  margin: 0 auto;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-image image{
+  width: 100%;
+}
+.banner-news{
+  margin: -30rpx auto 0;
+  padding: 20rpx 10rpx;
+  max-width: 300rpx;
+  font-size: 29rpx;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4rpx 4rpx rgb(221, 213, 213);
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}

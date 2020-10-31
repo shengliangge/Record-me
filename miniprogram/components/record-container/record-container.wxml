@@ -1,0 +1,19 @@
+<!-- components/record-container/record-container.wxml -->
+<view class="container" bind:longpress="delete">
+	<view class="header">
+		<view class="time">{{recordContent.createTime}}</view>
+		<view>
+			<image
+			 class="expression"
+			 src="../../images/{{recordContent.mood}}.png"
+			 mode="widthFix"
+			/>
+		</view>
+	</view>
+	<view class="content">
+		<view class="title">{{recordContent.title}}</view>
+		<view class="content-main">{{recordContent.content}}</view>
+	</view>
+	<view class="tag">{{recordContent.state}}</view>
+</view>
+

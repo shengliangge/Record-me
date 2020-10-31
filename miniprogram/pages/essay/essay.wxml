@@ -1,0 +1,63 @@
+<!--miniprogram/pages/essay/essay.wxml-->
+<tab-bar title="{{pageTitle}}"></tab-bar>
+<van-dialog
+ message="{{message}}"
+ title="确定返回？"
+ show="{{ show }}"
+ show-cancel-button
+ bind:cancel="onClose"
+ bind:confirm="onConfirm"
+ close-on-click-overlay
+>
+	<!-- <image src="https://img.yzcdn.cn/1.jpg" /> -->
+</van-dialog>
+<view class="container">
+	<view class="toast">涂涂改改</view>
+	<view class="title">
+		<input
+		 type="text"
+		 placeholder="有标题吗"
+		 bindinput="titleInput"
+		/>
+	</view>
+	<view class="section">
+		<textarea
+		 maxlength="-1"
+		 class="content"
+		 placeholder="随便记些什么吧"
+		 name="name"
+		 bindinput="contentInput"
+		></textarea>
+
+		<view class="tag">
+			<van-dropdown-menu>
+				<van-dropdown-item
+				 value="{{ state }}"
+				 options="{{ option1 }}"
+				 title="{{ itemTitle }}"
+				 bind:change="onSwitch1Change"
+				/>
+				<van-dropdown-item
+				 value="{{ mood }}"
+				 options="{{ option2 }}"
+				 bind:change="onSwitch2Change"
+				/>
+			</van-dropdown-menu>
+		</view>
+		<view class="expressionIcon">
+			<image src="../../images/{{mood}}.png" mode="widthFix" />
+		</view>
+	</view>
+	<view class="clamp">
+		<image src="../../images/clamp.png" mode="widthFix" />
+	</view>
+
+	<!-- 保存和取消按钮 -->
+	<view class="btn-wrapper">
+		<view class="btn" bind:tap="cancel">取消</view>
+		<view class="btn" bind:tap="createRecord">保存</view>
+	</view>
+</view>
+
+<van-toast id="van-toast" />
+

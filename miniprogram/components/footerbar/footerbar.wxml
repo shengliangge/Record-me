@@ -1,0 +1,73 @@
+<!-- components/footerbar/footerbar.wxml -->
+<view class="footerBar">
+	<view class="item-wrapper">
+		<view class="item index" bindtap="gotoIndex">
+			<image
+			 class="item-image .item-index-image"
+			 src="../../images/indexIcon.png"
+			 mode="widthFix"
+			/>
+		</view>
+		<view bindtap="gotoNote" class="item record {{navId == 1? 'active' : '' }}">
+			<image
+			 class="item-image"
+			 wx:if="{{navId == 1}}"
+			 src="../../images/note(2).png"
+			 mode="widthFix"
+			/>
+			<image
+			 class="item-image"
+			 wx:else
+			 src="../../images/note(1).png"
+			 mode="widthFix"
+			/>
+			<text class="item-text  {{navId == 1? 'active-text' : '' }}">动态</text>
+		</view>
+	</view>
+
+	<view class="add">
+		<view class="bgc">
+			<view class="add-wrapper" bindtap="gotoAdd">
+				<image
+				 class="add-wrapper-image"
+				 src="../../images/add.png"
+				 mode="widthFix"
+				/>
+			</view>
+		</view>
+	</view>
+
+	<view class="item-wrapper">
+		<view class="item note {{navId == 2? 'active' : ''}}" bindtap="gotoRecord">
+			<image
+			 class="item-image"
+			 wx:if="{{navId == 2}}"
+			 src="../../images/record(2).png"
+			 mode="widthFix"
+			/>
+			<image
+			 class="item-image"
+			 wx:else
+			 src="../../images/record(1).png"
+			 mode="widthFix"
+			/>
+			<text class="item-text {{navId == 2? 'active-text' : '' }}">便签</text>
+		</view>
+		<view class="item personal {{navId == 3 ? 'active' : ''}}" bindtap="gotoPersonal">
+			<image
+			 class="item-image"
+			 wx:if="{{navId == 3}}"
+			 src="../../images/wode(2).png"
+			 mode="widthFix"
+			/>
+			<image
+			 wx:else
+			 class="item-image"
+			 src="../../images/wode(1).png"
+			 mode="widthFix"
+			/>
+			<text class="item-text {{navId == 3? 'active-text' : '' }}">我的</text>
+		</view>
+	</view>
+</view>
+

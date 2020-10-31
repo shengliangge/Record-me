@@ -1,0 +1,61 @@
+/* components/submit-information/submit-information.wxss */
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: #F5FAFE;
+  position: relative;
+}
+.toast{
+  font-size: 30rpx;
+  font-family: YouYuan;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  position: relative;
+}
+.toast::before{
+  content: '';
+  width: 10rpx;
+  height: 30rpx;
+  background-color: #FC9D99 ;
+  position: absolute;
+  left: -1rpx;
+  top: 16rpx;
+}
+.section{
+  width: 92%;
+  padding: 60rpx 30rpx 20rpx;
+  margin: 20rpx auto 0;
+  box-shadow: 0 4rpx 4rpx rgb(221, 213, 213);
+  box-sizing: border-box; 
+  border-radius: 5px;  
+  background-color: #fff;
+}
+.content{
+  width: 100%;
+  text-align: left;
+  font-size: 28rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.button{
+  margin-left: 80%;
+  margin-top: 20rpx;
+  padding: 0;
+  background-color: #4792E6;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2rpx;
+}
+.sticky{
+  position: absolute;
+  top: 85rpx;
+  left: 34rpx;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+}
+.sticky-image{
+  width: 50rpx;
+}

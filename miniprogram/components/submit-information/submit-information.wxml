@@ -1,0 +1,45 @@
+<!-- components/submit-information/submit-information.wxml -->
+<view class="container">
+	<view class="toast">
+		{{title}}
+	</view>
+	<view class="section">
+		<form bindsubmit="submit">
+			<textarea
+			 maxlength="-1"
+			 class="content"
+			 placeholder="{{placeholder}}"
+			 name="name"
+			 bindinput="contentInput"
+			></textarea>
+			<button 
+			 class="button"
+			 size="mini"
+			 form-type="submit"
+			>提交
+			</button>
+		</form>
+	</view>
+	<view class="sticky" wx:if="{{showSticky}}">
+		<image
+		 class="sticky-image"
+		 src="../../images/nail.png"
+		 alt=""
+		 mode="widthFix"
+		/>
+		<image
+		 class="sticky-image"
+		 src="../../images/nail.png"
+		 alt=""
+		 mode="widthFix"
+		/>
+	</view>
+	<view class="clamp" wx:if="{{showClamp}}">
+		<image
+		 class="clamp-image"
+		 src="../../images/clamp.png"
+		 mode="widthFix"
+		/>
+	</view>
+</view>
+

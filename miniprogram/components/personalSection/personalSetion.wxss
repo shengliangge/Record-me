@@ -1,0 +1,31 @@
+/* components/personalSection/personalSetion.wxss */
+.section{
+  padding:20rpx 20rpx;
+  width: 94%;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top:20rpx;
+  border-radius: 10px;
+  box-shadow: 0 4rpx 4rpx rgb(221, 213, 213);
+  background-color: #ffffff;
+}
+.info-warpper{
+  display: flex;
+}
+.icon{
+  width: 50rpx;
+  margin-right: 20rpx;
+}
+.title{
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.btn{
+  width: 25rpx;
+}
+.icon-image{
+  width: 100%;
+}

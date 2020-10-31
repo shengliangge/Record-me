@@ -1,0 +1,27 @@
+<!--miniprogram/pages/problem-feedback/problem-feedback.wxml-->
+<tab-bar title="{{pagetitle}}"></tab-bar>
+<view class="container">
+	<view class="toast">
+		关于我们
+	</view>
+	<view class="section">
+			<view class="content">
+        {{content}}
+      </view>
+	</view>
+	<view class="sticky">
+		<image
+		 class="sticky-image"
+		 src="../../images/nail.png"
+		 alt=""
+		 mode="widthFix"
+		/>
+		<image
+		 class="sticky-image"
+		 src="../../images/nail.png"
+		 alt=""
+		 mode="widthFix"
+		/>
+	</view>
+</view>
+

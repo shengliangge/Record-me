@@ -1,0 +1,13 @@
+<!--miniprogram/pages/suggestion/suggestion.wxml-->
+<tab-bar title="{{title}}"></tab-bar>
+
+<submit-info
+ title="{{title}}"
+ showSticky="{{true}}"
+ showClamp="{{false}}"
+ placeholder="{{placeholder}}"
+ bind:submit="commitSuggestion"
+></submit-info>
+
+<van-toast id="van-toast" />
+

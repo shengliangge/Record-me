@@ -1,0 +1,67 @@
+<!-- miniprogram/pages/index/index.wxml -->
+<view class="container">
+	<view class="bg-image">
+		<image
+		 src="../../images/index-background.jpg"
+		 alt=""
+		 mode="widthFix"
+		/>
+	</view>
+	<!-- 头部 -->
+  <view class="block" style="height: {{blockHeight}}px">
+    首页
+  </view>
+
+	<view class="content-wrapper" style="margin-top: {{blockHeight}}px">
+		<view class="header">
+			<!-- 热气球 -->
+			<image src="../../images/Hot-air-balloon.png" mode="widthFix" />
+			<image src="../../images/Hot-air-balloon.png" mode="widthFix" />
+		</view>
+		<!-- 中部banner栏 -->
+		<view class="banner">
+			<swiper
+			 class="slogan-wrapper"
+			 autoplay
+			 interval="3000"
+			 vertical
+			 circular
+			 duration="1000"
+			>
+				<swiper-item
+				 class="slogan"
+				 wx:for="{{sloganList}}"
+				 wx:key="index"
+				>{{item}}
+				</swiper-item>
+			</swiper>
+			<view class="showTime">
+				<text>{{currentTime}}</text>
+			</view>
+		</view>
+		<!-- 两个按钮 -->
+		<view class="button-wrapper">
+			<view  class="button-content" animation="{{animationData}}">
+				<view class="line"></view>
+				<view class="button-pad">
+					<view class="button" bindtap="gotoNote">
+						<image src="../../images/note(2).png" />
+					</view>
+				</view>
+			</view>
+			<view class="button-content" animation="{{animationData}}">
+				<view class="line"></view>
+				<view class="button-pad">
+					<view class="button" bindtap="gotoRecord">
+						<image src="../../images/record(2).png" alt="" />
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 绿色小气球 -->
+		<view class="icon">
+			<image src="../../images/balloon.png" mode="widthFix" />
+		</view>
+	</view>
+</view>
+

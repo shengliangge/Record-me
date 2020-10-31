@@ -1,0 +1,130 @@
+/* miniprogram/pages/essay/essay.wxss */
+/* components/submit-information/submit-information.wxss */
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: #F5FAFE;
+  position: relative;
+}
+.toast{
+  font-size: 30rpx;
+  font-family: YouYuan;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  position: relative;
+}
+.toast::before{
+  content: '';
+  width: 10rpx;
+  height: 30rpx;
+  background-color: #FC9D99 ;
+  position: absolute;
+  left: -1rpx;
+  top: 16rpx;
+}
+.title{
+  width: 92%;
+  padding-left: 20rpx;
+  margin: 20rpx auto 0;
+  height: 80rpx;
+  box-shadow: 0 4rpx 4rpx rgb(221, 213, 213);
+  border: 1px solid rgb(245, 241, 241);
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px ;
+}
+.title input{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+.section{
+  width: 92%;
+  padding: 60rpx 30rpx 20rpx;
+  margin: 4rpx auto 0;
+  box-shadow: 0 4rpx 4rpx rgb(221, 213, 213);
+  box-sizing: border-box; 
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px ;
+  background-color: #fff;
+  position: relative;
+}
+.content{
+  width: 100%;
+  text-align: left;
+  font-size: 28rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+  margin-left: 80%;
+  margin-top: 20rpx;
+  padding: 0;
+  background-color: #4792E6;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2rpx;
+}
+
+.clamp{
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+}
+.clamp image{
+  width: 70rpx;
+}
+.tag{
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.van-ellipsis{
+  font-size: 24rpx;
+  background-color: #F5FAFE; 
+  padding: 20rpx 70rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+.van-dropdown-menu__item{
+  justify-content: start !important;
+}
+.van-dropdown-menu__title:after {
+  right: 60rpx !important;
+}
+.expressionIcon{
+  position: absolute;
+  width: 70rpx;
+  height: 76rpx;
+  bottom: 32rpx;
+  right: 96rpx;
+  background-color:#F5FAFE;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+
+}
+.expressionIcon image{
+  width: 40rpx;
+}
+.btn-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30rpx;
+}
+.btn{
+  font-size: 24rpx;
+  text-align: center;
+  padding: 10rpx 30rpx;
+  background-color: rgb(254, 67, 101);
+  color: #fff;
+  border-radius: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}

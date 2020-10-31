@@ -1,0 +1,70 @@
+<tab-bar title="{{pagetitle}}"></tab-bar>
+<van-dialog
+ message="{{message}}"
+ title="确定删除？"
+ show="{{ dialogShow }}"
+ show-cancel-button
+ bind:cancel="onClose"
+ bind:confirm="onConfirm"
+ close-on-click-overlay
+>
+</van-dialog>
+<view class="wrapper">
+	<view class="head">
+		<image class="head-img" src="../../images/note_bg_.gif" />
+	</view>
+	<view class="content">
+		<view class="content-top" bind:tap="gotoPersonal">
+			<text class="content-top__name">{{userInfo.nickName}}</text>
+			<view class="content-top__portrait">
+				<image class="portrait" src="{{userInfo.avatarUrl}}"></image>
+			</view>
+		</view>
+		<view class="content-top__time">
+			<!-- 选择查看的日期 -->
+			<text bind:tap="showPopup">{{currentTime}}</text>
+			<!-- 下方弹出层组件 -->
+			<van-popup
+			 show="{{ show }}"
+			 round
+			 position="bottom"
+			 custom-style="height: 40%;"
+			>
+				<!-- 选择日期组件 -->
+				<van-datetime-picker
+				 type="year-month"
+				 value="{{ currentDate }}"
+				 min-date="{{ minDate }}"
+				 max-date="{{ maxDate }}"
+				 formatter="{{ formatter }}"
+				 bind:confirm="confirm"
+				 bind:cancel="cancel"
+				/>
+			</van-popup>
+		</view>
+
+		<view class="content-main">
+			<load remind="{{remind}}" class="load"></load>
+			<block wx:for="{{noteContent}}" wx:key="index">
+				<show-note
+				 bind:deleteNote="deleteNote"
+				 data-id="{{item._id}}"
+				 content="{{item.content}}"
+				 imgs="{{item.fileID}}"
+				 createTime="{{item.createTime}}"
+				 month="{{item.month}}"
+				 day="{{item.day}}"
+				></show-note>
+			</block>
+
+		</view>
+	</view>
+
+</view>
+
+<!-- 站位块 -->
+<view class="block-space" style="height: 240rpx"></view>
+<footer-bar/>
+
+<van-toast id="van-toast" />
+

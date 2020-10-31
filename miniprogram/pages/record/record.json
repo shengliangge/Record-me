@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "record": "../../components/record-container/record-container",
+    "load":"../../components/load/load",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index",
+    "van-toast": "@vant/weapp/toast/index"
+  }
+}

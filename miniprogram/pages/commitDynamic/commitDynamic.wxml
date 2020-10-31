@@ -1,0 +1,66 @@
+<!-- miniprogram/pages/commitDynamic/commitDynamic.wxml -->
+<tab-bar title="{{pageTitle}}"></tab-bar>
+<view class="wrapper">
+	<van-dialog
+	 message="{{message}}"
+	 title="确定返回？"
+	 show="{{ show }}"
+	 show-cancel-button
+	 bind:cancel="onClose"
+	 bind:confirm="onConfirm"
+	 close-on-click-overlay
+	>
+		<!-- <image src="https://img.yzcdn.cn/1.jpg" /> -->
+	</van-dialog>
+	<view class="header-content">
+		<view class="btn" bind:tap="cancel">返回</view>
+		<view class="time">
+			<text>{{currentTime}}</text>
+		</view>
+		<view class="btn" bind:tap="commitNote">发布</view>
+	</view>
+	<load remind="{{remind}}"></load>
+	<view class="main">
+
+		<view class="user-info">
+			<view class="user_avatar">
+				<image src="{{userInfo.avatarUrl}}" mode="widthFix" />
+			</view>
+			<view class="user_name">{{userInfo.nickName}}</view>
+		</view>
+		<textarea
+		 bindinput="contentInput"
+		 maxlength="-1"
+		 class="content"
+		 placeholder="{{placeholder}}"
+		></textarea>
+		<view class="image-wrapper">
+			<view class="addImage" bind:tap="getImage">
+				<image src="../../images/upImg.png" mode="widthFix" />
+			</view>
+			<block wx:for="{{tempFilePaths}}" wx:key="index">
+				<view class="showImage">
+					<image
+					 src="{{item}}"
+					 alt=""
+					 mode="aspectFill"
+					/>
+					<view
+					 class="delete-pic"
+					 data-index="{{index}}"
+					 bind:tap="deletePic"
+					>
+						<icon class="iconfont icon-delete" />
+					</view>
+				</view>
+			</block>
+		</view>
+		<view class="addPlace" bind:tap="addAddress">
+			<image src="../../images/adress.png" mode="widthFix" />
+			<span>添加地址</span>
+		</view>
+	</view>
+</view>
+
+<van-toast id="van-toast" />
+

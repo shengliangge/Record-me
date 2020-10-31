@@ -1,0 +1,240 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": false,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "appid": "wx3078301efc6121b7",
+  "projectname": "Record-me",
+  "libVersion": "2.8.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/note/note",
+          "pathName": "pages/note/note",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/personalSection/personalSetion",
+          "pathName": "components/personalSection/personalSetion",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/personal/personal",
+          "pathName": "pages/personal/personal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/record/record",
+          "pathName": "pages/record/record",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/submit-information/submit-information",
+          "pathName": "components/submit-information/submit-information",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/note/note",
+          "pathName": "pages/note/note",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/suggestion/suggestion",
+          "pathName": "pages/suggestion/suggestion",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/essay/essay",
+          "pathName": "pages/essay/essay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/tabBar/tabBar",
+          "pathName": "components/tabBar/tabBar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/suggestion/suggestion",
+          "pathName": "pages/suggestion/suggestion",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/personal/personal",
+          "pathName": "pages/personal/personal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/tabBar/tabBar",
+          "pathName": "components/tabBar/tabBar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/record/record",
+          "pathName": "pages/record/record",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/problem-feedback/problem-feedback",
+          "pathName": "pages/problem-feedback/problem-feedback",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/record-container/record-container",
+          "pathName": "components/record-container/record-container",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "components/footerbar/footerbar",
+          "pathName": "components/footerbar/footerbar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/commitDynamic/commitDynamic",
+          "pathName": "pages/commitDynamic/commitDynamic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/essay/essay",
+          "pathName": "pages/essay/essay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/essay/essay",
+          "pathName": "pages/essay/essay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/commitDynamic/commitDynamic",
+          "pathName": "pages/commitDynamic/commitDynamic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/commitDynamic/commitDynamic",
+          "pathName": "pages/commitDynamic/commitDynamic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/commitDynamic/commitDynamic",
+          "pathName": "pages/commitDynamic/commitDynamic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/about-us/about-us",
+          "pathName": "pages/about-us/about-us",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

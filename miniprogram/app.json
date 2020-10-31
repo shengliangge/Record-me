@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/record/record",
+    "components/personalSection/personalSetion",
+    "components/tabBar/tabBar",
+    "components/showNote/showNote",
+    "components/submit-information/submit-information",
+    "components/record-container/record-container",
+    "components/footerbar/footerbar",
+    "pages/note/note",
+    "pages/personal/personal",
+    "pages/index/index",
+    "pages/about-us/about-us",
+    "pages/suggestion/suggestion",
+    "pages/essay/essay",
+    "pages/commitDynamic/commitDynamic"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "submit-info": "./components/submit-information/submit-information",
+    "tab-bar": "./components/tabBar/tabBar",
+    "footer-bar": "./components/footerbar/footerbar"
+  }
+}

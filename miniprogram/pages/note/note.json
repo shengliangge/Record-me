@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "tab-bar": "../../components/tabBar/tabBar",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "show-note": "../../components/showNote/showNote",
+    "load":"../../components/load/load",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-toast": "@vant/weapp/toast/index"
+    
+  }
+}

@@ -1,0 +1,81 @@
+/* components/showNote/showNote.wxss */
+
+.container {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  padding: 20rpx 0;
+}
+
+.item-time {
+  width: 120rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.item-time .day {
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: gray;
+}
+
+.item-content {
+  flex: 1;
+  border-left: 2px solid #ecf2f7;
+  padding: 0 10rpx 10rpx 50rpx;
+}
+
+.item-content__text {
+  font-size: 28rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-content__pic {
+  margin-top: 20rpx;
+}
+
+.item-content__pic-image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 28rpx;
+}
+
+.sign {
+  width: 40rpx;
+  height: 80rpx;
+  background-color: #fff;
+  position: absolute;
+  left: 102rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-image {
+  width: 26rpx;
+}
+
+.adress {
+  margin-top: 20rpx;
+  height: 30rpx;
+}
+
+.adress-image {
+  width: 30rpx;
+}
+
+.van-swipe-cell__right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgb(254, 67, 101);
+  transform: translate3d(100%, 0, 0)
+}
